@@ -5,15 +5,15 @@ plugins {
 }
 
 android {
-    namespace "com.example.flutter_whatsapp_clone"
-    compileSdkVersion flutter.compileSdkVersion
+    namespace "com.example.whatsapp_ui"
+    compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.flutter_whatsapp_clone"
-        minSdkVersion flutter.minSdkVersion
-        targetSdkVersion flutter.targetSdkVersion
-        versionCode flutter.versionCode
-        versionName flutter.versionName
+        applicationId "com.example.whatsapp_ui"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
     }
 
     buildTypes {
