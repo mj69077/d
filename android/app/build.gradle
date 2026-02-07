@@ -1,15 +1,16 @@
+def flutterRoot = rootProject.ext.flutterRoot
+
 plugins {
     id "com.android.application"
     id "kotlin-android"
-    id "dev.flutter.flutter-gradle-plugin"
 }
 
 android {
-    namespace "com.example.whatsapp_ui"
+    namespace "com.mcoding.whatsapp_ui"
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.whatsapp_ui"
+        applicationId "com.mcoding.whatsapp_ui"
         minSdk 21
         targetSdk 34
         versionCode 1
@@ -23,6 +24,4 @@ android {
     }
 }
 
-flutter {
-    source "../.."
-}
+apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
