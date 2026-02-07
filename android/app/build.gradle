@@ -1,5 +1,3 @@
-def flutterRoot = rootProject.ext.flutterRoot
-
 plugins {
     id "com.android.application"
     id "kotlin-android"
@@ -24,4 +22,4 @@ android {
     }
 }
 
-apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+apply from: "$rootDir/../flutter/packages/flutter_tools/gradle/flutter.gradle"
